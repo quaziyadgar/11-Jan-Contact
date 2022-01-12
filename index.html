@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <Section>
+        <div class="A">
+            <p>A</p>
+            <li>Abhishek Ojha</li>
+            <li>Abdul</li>
+            <li>Abhay</li>
+            <li>Ashi</li>
+            <li>Ashna</li>
+            <li>Aftab</li>
+            <li>Arman</li>
+            <li>Akhilesh</li>
+            <li>Ayush</li>
+            <li>Ajay</li>
+        </div>
+        <div class="B">
+            <p>B</p>
+            <li>Brijnand Maurya</li>
+            <li>Bhramri</li>
+            <li>Badrinath</li>
+            <li>Babur</li>
+            <li>Bablu</li>
+            <li>Brijesh</li>
+            <li>Bipin</li>
+            <li>Bhaskar</li>
+            <li>Barack</li>
+            <li>Bandar</li>
+        </div>
+        <div class="C">
+            <p>C</p>
+            <li>Chacha</li>
+            <li>Chulbul</li>
+            <li>Charpai</li>
+            <li>Charkha</li>
+            <li>Chalawa</li>
+            <li>chawla</li>
+            <li>Chitranshu</li>
+            <li>Chirag</li>
+            <li>Chahak</li>
+            <li>Chalu</li>
+        </div>
+    </Section>
+    <main>
+        <form action="pattern()">
+            <input type="number" name="length">
+             <input type="button" value="submit" onclick="action">
+        </form>
+        <div id="show">
+
+        </div>
+    </main>
+    <script>
+        var length = document.getElementsByClassName("length").value;
+        var show = document.getElementById("show");
+
+        function pattern(){
+    
+            for(var i=1;i<=length;i++)
+            {
+                for(var j=1;j<=i;j++)
+                {
+                    show.innerText=j;
+                }
+                show.innerText="\n"
+            }
+        }
+
+    </script>
+</body>
+</html>

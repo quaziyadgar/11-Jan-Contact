@@ -1,0 +1,23 @@
+*{
+    background-color: rgb(227, 241, 241);
+}
+body{
+    height: 200vh;
+}
+li{
+    font-size: large;
+    list-style: none;
+    margin-left: 20px;
+}
+li:nth-child(odd){
+    background-color: bisque;
+}
+li:nth-child(even){
+    background-color: rgb(226, 152, 195);
+}
+p{
+    text-align: center;
+    position: sticky;
+    top: 0px;
+
+}
