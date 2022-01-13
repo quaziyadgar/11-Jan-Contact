@@ -50,28 +50,26 @@
         </div>
     </Section>
     <main>
-        <form action="pattern()">
-            <input type="number" name="length">
-             <input type="button" value="submit" onclick="action">
+        <form onsubmit="pattern()">
+            <input type="number" id="length">
+             <button type="submit">Submit</button>
         </form>
-        <div id="show">
-
-        </div>
+        <p id="show"></p>
     </main>
     <script>
-        var length = document.getElementsByClassName("length").value;
-        var show = document.getElementById("show");
-
-        function pattern(){
     
+        function pattern(){
+            var length = document.getElementById("length").value;
+            var show = document.getElementById("show");
             for(var i=1;i<=length;i++)
             {
                 for(var j=1;j<=i;j++)
                 {
-                    show.innerText=j;
+                    show.innerHTML="*";
                 }
-                show.innerText="\n"
+                show.innerHTML='<br/>'
             }
+            // alert("hello");
         }
 
     </script>
